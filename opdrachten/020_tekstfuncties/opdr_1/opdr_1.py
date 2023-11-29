@@ -15,5 +15,12 @@ print()
 voornaam = "albert"
 achternaam = "einstein"
 
+voornaam2 = voornaam.capitalize()
+achternaam2 = achternaam.capitalize()
 
-print()
+my_string = "O mamma mia, wat maak je toch heerlijke pizza's"
+
+print(my_string)
+
+my_string = "zei ooit: 'Als je niks fout doet, dan kun je ook niks leren!'"
+print (voornaam2, achternaam2, my_string)
