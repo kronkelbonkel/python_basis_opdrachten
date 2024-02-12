@@ -4,4 +4,9 @@
 
 # Hier komt je code...
 
-gasten = ["Jij", ... ]
+gasten = ["Lisanne", "Paul", "Kees", "Marie", "Hilda" ]
+gasten.remove("Marie")
+index_kees = gasten.index("Kees")
+gasten.insert(index_kees + 1, ("George"))
+
+print(gasten)
