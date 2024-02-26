@@ -3,10 +3,14 @@
 # Groep:
 
 
-def write_to_file(afile, atext):
-    # je code komt hier
-    # het woordje pass hieronder kun je weghalen
-    pass
+
+def write_to_file(bestandsnaam, tekst):
+    try:
+        with open(bestandsnaam, "a") as bestand:
+            bestand.write(tekst + "\n")
+        print(f"Tekst is succesvol toegevoegd aan {bestandsnaam}.")
+    except Exception as e:
+        print(f"Fout bij schrijven naar bestand: {e}")
 
 my_tekst = "Schrijf dit maar even in een bestandje"
 my_file = "test.txt"
